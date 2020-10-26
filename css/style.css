@@ -550,6 +550,7 @@ header img {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
+    cursor: pointer;
 }
 .plan-card--ca-2 {
     width: 150px;
@@ -563,6 +564,7 @@ header img {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
+    cursor: pointer;
 }
 .plan-card--ca-3 {
     width: 150px;
@@ -576,8 +578,11 @@ header img {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
+    cursor: pointer;
 }
-.plan-card--ca span {
+.plan-card--ca span,
+.plan-card--ca-2 span,
+.plan-card--ca-3 span {
     display: inline-block;
     vertical-align: text-bottom;
     width: 20px;
