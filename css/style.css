@@ -25,8 +25,8 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
     scroll-behavior: smooth;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 header {
     position: relative;
@@ -37,7 +37,7 @@ header {
     min-width: 320px;
     height: 334px;
     text-align: center;
-    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(2,168,226,1) 0%, rgba(9,9,121,1) 35%, rgb(26 26 27) 50%, rgb(10 10 10) 67%, rgba(54,89,212,1) 76%, rgba(1,199,247,1) 89%, rgba(0,212,255,1) 100%);
+    background: var(--black);
     box-shadow: 0px 1px 8px black;
 }
 header img {
@@ -65,7 +65,7 @@ header img {
 .header--title-container p {
     margin-top: 25px;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.8rem;
     color: var(--just-white);
     text-shadow: 2px 1px 1px var(--warm-black);
@@ -127,7 +127,7 @@ header img {
 .main-exchange-container p {
     margin-bottom: 60px;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.6rem;
     color: var(--warm-black);
 }
@@ -135,7 +135,7 @@ header img {
     text-align: center;
     margin: 15px;
     font-size: 1.8rem;
-    color: var(--table-title);
+    color: var(--bitcoin-orange);
 }
 .main-exercises-container {
     position: relative;
@@ -180,9 +180,9 @@ header img {
     font-weight: 500;
     line-height: 1.9rem;
     color: var(--just-white);
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(7, 7, 7, 0.1);
     border-radius: 0 0 35px 35px;
-    border-top: 1px solid var(--just-white);
+    border-top: 1px solid var(--bitcoin-orange);
 }
 .exercises-details p {
     margin-top: 10px;
@@ -210,18 +210,6 @@ header img {
     background-color: var(--warm-black);
     box-shadow: 0px -1px 5px 2px black;
 }
-.product-detail--ybw-logo {
-    position: absolute;
-    width: 50px;
-    height: 48px;
-    top: -20px;
-    left: calc(50% - 20px);
-    background-image: url(../assets/img/ybw-logo1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .product-detail--title {
     width: 90%;
     min-width: 288px;
@@ -235,7 +223,7 @@ header img {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
-    color: var(--just-white)
+    color: var(--bitcoin-orange)
 }
 .product-detail--title p {
     margin-bottom: 20px;
@@ -253,7 +241,7 @@ header img {
     padding: 15px;
     background-color: var(--black);
     border-radius: 5px;
-    box-shadow: 10px 10px 10px rgb(197 22 51 / 23%);
+    box-shadow: 5px 5px 10px rgba(246, 132, 0, 0.23);
 }
 .product-detail--card .clock {
     display: inline-block;
@@ -568,6 +556,7 @@ footer .right {
     flex-direction: column;
     text-align: center;
     font-weight: bold;
-    color: var(--off-white);
+    color: rgb(179, 177, 177);
     margin-bottom: 20px;
+    margin-right: 20px;
 }
