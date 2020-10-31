@@ -37,13 +37,13 @@ header {
     min-width: 320px;
     height: 334px;
     text-align: center;
-    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(2,168,226,1) 0%, rgba(9,9,121,1) 35%, rgba(77,7,151,1) 50%, rgba(95,5,185,1) 67%, rgba(54,89,212,1) 76%, rgba(1,199,247,1) 89%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(2,168,226,1) 0%, rgba(9,9,121,1) 35%, rgb(26 26 27) 50%, rgb(10 10 10) 67%, rgba(54,89,212,1) 76%, rgba(1,199,247,1) 89%, rgba(0,212,255,1) 100%);
     box-shadow: 0px 1px 8px black;
 }
 header img {
-    width: 150px;
-    height: 24px;
-    margin-top: 60px;
+    width: 120px;
+    height: 50px;
+    margin-top: 40px;
     align-self: center;
 }
 .header--title-container {
@@ -100,7 +100,7 @@ header img {
     width: 100%;
     height: auto;
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     text-align: center;
     background-color: var(--off-white);
 }
@@ -111,11 +111,11 @@ header img {
     margin: 0 auto
 }
 .main-exchange-container .backgroundImg {
-    width: 200px;
+    width: 300px;
     height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background: url('../assets/img/bitcoin.svg') center/cover no-repeat;
+    background: url('../assets/img/main__exchange--logo.png') center/cover no-repeat;
 }
 .main-exchange-container h2 {
     margin-bottom: 30px;
@@ -126,140 +126,78 @@ header img {
 }
 .main-exchange-container p {
     margin-bottom: 60px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.6rem;
     color: var(--warm-black);
 }
-.main-tables-container-title {
-    text-align: left;
+.main-exercises-container-title {
+    text-align: center;
     margin: 15px;
     font-size: 1.8rem;
     color: var(--table-title);
 }
-.main-tables-container-grid {
-    display: grid;
+.main-exercises-container {
     position: relative;
-    width: 80%;
+    display: flex;
+    gap:10px;
+    width: 90%;
     margin: 0 auto;
-    grid-template-columns: 230px 230px;
-    column-gap: 20px;
-    justify-content: start;
     min-width: 235px;
     max-width: 500px;
+    overflow-y: hidden;
     scroll-snap-align: center;
     scroll-snap-type: x proximity;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
 }
-.main-tables-container {
-    display: grid;
+.main-exercises-container a {
+    text-decoration: none;
+}
+.main__routine {
+    display: block;
+    width: 210px;
+    height: 170px;
+    border-radius: 30px;
+    background-image: url(../assets/img/superior_train.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.exercises-details {
     position: relative;
-    min-width: 235px;
-    max-width: 500px;
-    justify-content: center;
-    grid-template-columns: repeat(2, minmax(100px, 300px));
-    grid-template-rows: 50px 120px 65px;
-    font-family: "Inter", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: #3a3734;
-    list-style: none;
-}
-.main-tables-container li {
-    height: 40px;
-    min-width: 100px;
-    margin: 1px;
-    padding: 12px;
-    border-radius: 5px;
-    text-align: left;
-    background-color: var(--just-white);
-}
-.main-tables-container-coins,
-.main-tables-container-coins-value {
-    grid-row: 2 / 2;
-}
-.main-tables-container .main-tables-container-coins-value {
-    color: var(--warm-black);
-    font-size: 1.4rem;
-    font-weight: 400;
-}
-.main-tables--arrow-trending-down {
-    width: 15px;
-    height: 10px;
-    background: url(../assets/icons/trending-down.svg) center/cover no-repeat;
-}
-.main-tables--arrow-trending-up {
-    width: 15px;
-    height: 10px;
-    background: url(../assets/icons/trending-up.svg) center/cover no-repeat;
-}
-.main-tables-container-coins-value li {
+    padding:5px;
     display: flex;
-    justify-content: space-between;
-}
-.currency-table--date {
-    grid-row: 4;
-    grid-column: 1 / 3;
-    padding: 8px;
-    border-radius: 8%;
-    font-size: 1.6rem;
-    font-weight: 700;
+    flex-direction: column;
+    margin: auto auto;
+    width: 210px;
+    height: 80px;
+    top:90px;
+    right:0;
+    bottom:0;
+    left:0;
+    font-size: 2rem;
+    font-weight: 500;
     line-height: 1.9rem;
-    background-color: var(--soft-orange);
-    color: var(--warm-black);
+    color: var(--just-white);
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 0 0 35px 35px;
+    border-top: 1px solid var(--just-white);
 }
-.currency-table--date::after {
-    content: "19 Octubre 23:10";
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+.exercises-details p {
+    margin-top: 10px;
+    color: var(--just-white);
 }
-.right-arrow {
-    display: none;
-    position: absolute;
-    right: -30px;
-    bottom: 124px;
-    width: 20px;
-    height: 20px;
-    background-image: url(../assets/icons/right_arrow.svg);
+.main__second-routine {
+    width: 210px;
+    height: 170px;
+    border-radius: 30px;
+    display: block;
+    background-image: url(../assets/img/lower_train.jpg);
     background-repeat: no-repeat;
-    cursor: pointer;
-}
-.left-arrow {
-    display: none;
-    position: absolute;
-    left: -20px;
-    bottom: 130px;
-    width: 25px;
-    height: 20px;
-    background-image: url(../assets/icons/left-arrow.svg);
-    background-repeat: no-repeat;
-}
-/* Commissions table */
-
-.main-tables-container-title-commissions {
-    text-align: left;
-    margin: 15px;
-    font-size: 1.8rem;
-    color: var(--secondary-blue);
-}
-.currency-table--date-commissions {
-    grid-row: 4;
-    grid-column: 1 / 3;
-    padding: 8px;
-    border-radius: 8%;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.9rem;
-    background-color: var(--soft-blue);
-    color: var(--warm-black);
-}
-.currency-table--date-commissions::after {
-    content: "19 Octubre 23:10";
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    background-size: cover;
+    background-position: center;
+  
 }
 /* Section of benefits */
 
@@ -270,14 +208,18 @@ header img {
     height: auto;
     padding: 20px 10px;
     background-color: var(--warm-black);
+    box-shadow: 0px -1px 5px 2px black;
 }
-.product-detail--batata-logo {
+.product-detail--ybw-logo {
     position: absolute;
-    width: 40px;
-    height: 25px;
-    top: -10px;
+    width: 50px;
+    height: 48px;
+    top: -20px;
     left: calc(50% - 20px);
-    background-image: url(../assets/icons/batata.svg);
+    background-image: url(../assets/img/ybw-logo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .product-detail--title {
@@ -311,7 +253,7 @@ header img {
     padding: 15px;
     background-color: var(--black);
     border-radius: 5px;
-    box-shadow: 10px 10px 10px rgba(177, 22, 197, 0.233);
+    box-shadow: 10px 10px 10px rgb(197 22 51 / 23%);
 }
 .product-detail--card .clock {
     display: inline-block;
@@ -370,14 +312,14 @@ header img {
 .bitcoin-img-container {
     width: 100%;
     min-width: 320px;
-    height: 50vh;
-    background-image: url(../assets/img/bitcoinbaby.jpg);
+    height: 45vh;
+    background-image: url(../assets/img/bigbaby.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .bitcoin-img-container h2 {
-    padding-top: 60px;
+    padding-top: 40px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
@@ -425,6 +367,7 @@ header img {
 }
 
 .plans-container--basic-card {
+    display: none;
     position: relative;
     width: 70%;
     min-width: 190px;
@@ -443,13 +386,14 @@ header img {
     min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 5px;
+    margin: 50px auto; /* 5px left-right*/
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(8, 8, 8, 0.16);
 }
 .plans-container--premium-card {
+    display: none;
     position: relative;
     width: 70%;
     min-width: 190px;
@@ -590,10 +534,11 @@ header img {
     background-image: url(../assets/icons/arrow-right-orange.svg);
 }
 footer {
+    position: relative;
     display: flex;
     width: 100%;
     height: 150px;
-    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(2,168,226,1) 0%, rgba(9,9,121,1) 35%, rgba(77,7,151,1) 50%, rgba(95,5,185,1) 67%, rgba(54,89,212,1) 76%, rgba(1,199,247,1) 89%, rgba(0,212,255,1) 100%);
+    background: black;
     box-shadow: 0 -2px 5px #5857e2;
 }
 footer section{
@@ -614,4 +559,15 @@ footer .left ul {
 .left a {
     text-decoration: none;
     color: var(--just-white);
+}
+footer .right img {
+    width: 50px;
+}
+footer .right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    color: var(--off-white);
+    margin-bottom: 20px;
 }
