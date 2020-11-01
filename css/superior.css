@@ -1,0 +1,29 @@
+.main__routine-image img {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 40px;
+    border-radius: 40px;
+}
+.main__routine-content {
+    display: inline-block;
+    padding: 20px;
+    text-align: justify;
+}
+.main-exchange-container--title {
+    padding:20px;
+    background-color: rgb(247, 244, 244);
+    border-radius: 20px;
+}
+.main__routine-content h5 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.main__routine-content a {
+    text-align: justify;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(87, 85, 85);
+    text-decoration: none;
+}
