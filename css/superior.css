@@ -5,25 +5,19 @@
     margin-bottom: 40px;
     border-radius: 40px;
 }
-.main__routine-content {
-    display: inline-block;
-    padding: 20px;
-    text-align: justify;
-}
 .main-exchange-container--title {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
     padding:20px;
-    background-color: rgb(247, 244, 244);
-    border-radius: 20px;
 }
-.main__routine-content h5 {
-    margin-bottom: 20px;
-    font-size: 2rem;
+.main__routine-content h3 {
+    line-height: 2.2rem;
+    text-align: center;
 }
-.main__routine-content a {
-    text-align: justify;
-    line-height: 2.5rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: rgb(87, 85, 85);
-    text-decoration: none;
+.routine-video {
+    width: 300px;
+    height: 200px;
+    margin: 50px 0;
 }

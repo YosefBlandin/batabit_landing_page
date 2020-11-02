@@ -1,33 +1,18 @@
-.main-tables-container-grid {
+.main-exercises-container {
     display: grid;
     width: 100%;
     max-width: 100vw;
     grid-template-columns: repeat(2, minmax(300px, 300px));
-    justify-content: space-around;
+    justify-content: space-evenly;
     overflow: hidden;
 }
-.main-tables-container-coins li,
-.main-tables-container-coins-value li {
-    padding: 20px;
+.main__routine:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
 }
-.currency-table--date {
-    margin-top:50px;
-}
-.currency-table--date-commissions {
-    margin-top:50px;
-}
-.main-tables-container li {
-    height: 50px;
-}
-.right-arrow,
-.left-arrow {
-    display: none;
-}
+
 .bitcoin-img-container{
-    background-image: url(../assets/img/bitcoinbaby_tablet.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display:none;
 }
 .product-cards--container {
     display: grid;
