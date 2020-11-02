@@ -12,12 +12,16 @@
     justify-content:center;
     padding:20px;
 }
-.main__routine-content h3 {
-    line-height: 2.2rem;
-    text-align: center;
-}
 .routine-video {
     width: 300px;
     height: 200px;
-    margin: 50px 0;
+    margin: 30px 0;
+}
+.list-of-exercises li{
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--bitcoin-orange);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+    list-style: decimal-leading-zero;
 }
