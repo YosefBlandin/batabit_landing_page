@@ -1,0 +1,12 @@
+.exchange-container {
+    display: flex;
+    flex-direction: column;
+    .exchange__exercises {
+        flex-direction: row;
+        column-gap: 30px;
+        overflow: hidden;
+    }
+}
+.bitcoinImg-container {
+    display: none;
+}
