@@ -1,38 +1,24 @@
-.main-tables-container-grid {
-    display: grid;
-    width: 100%;
-    max-width: 100vw;
-    grid-template-columns: repeat(2, minmax(300px, 300px));
-    justify-content: space-around;
-    overflow: hidden;
+.exchange-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.main-tables-container-coins li,
-.main-tables-container-coins-value li {
-    padding: 20px;
+
+.exchange-container .exchange__exercises {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  overflow: hidden;
 }
-.currency-table--date {
-    margin-top:50px;
+
+.bitcoinImg-container {
+  display: none;
 }
-.currency-table--date-commissions {
-    margin-top:50px;
-}
-.main-tables-container li {
-    height: 50px;
-}
-.right-arrow,
-.left-arrow {
-    display: none;
-}
-.bitcoin-img-container{
-    background-image: url(../assets/img/bitcoinbaby_tablet.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.product-cards--container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.plans-container--slider {
-    overflow: hidden;
-}
+/*# sourceMappingURL=tablet.css.map */

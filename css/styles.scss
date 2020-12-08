@@ -1,0 +1,471 @@
+$bitcoin-orange: #F7931A;
+$soft-orange: #FFE9D5;
+$secondary-blue: #101010;
+$soft-blue: #E7F5FF;
+$warm-black: #201E1C;
+$black: #282623;
+$grey: #BABABA;
+$off-white: #FAF8F7;
+$just-white: #fff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@mixin productIcons {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background-color: $black;
+    background: url(../assets/img/background1.jpg) no-repeat center / cover;
+    &__img {
+        width: 120px;
+        height: 50px;
+        margin-top: 40px;
+        align-self: center;
+    }
+    &__title-container {
+        width: 90%;
+        min-width: 288px;
+        max-width: 900px;
+        height: 218px;
+        margin-top: 60px;
+        text-align: center;
+        align-self: center;
+    }
+    h1 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        color: $just-white;
+        text-shadow: 5px 5px 5px black;
+    }
+    & p {
+        margin-top: 25px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1.8rem;
+        color: $just-white;
+        text-shadow: 2px 1px 1px $warm-black;
+    }
+    .header__button {
+        position: absolute;
+        top: 270px;
+        left: calc(50% - 115px);
+        display: block;
+        margin-top: 35px;
+        padding: 15px;
+        width: 229px;
+        height: 48px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $black; 
+        border: none;
+        border-radius: 5px;
+        background-color: $off-white;
+        box-shadow: 0px 0px 13px rgba(89, 73, 80, 0.16);
+        transition: 0.5s;
+        &::before {
+            content: 'Conoce Nuestros Planes';
+        }
+        &:active,
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .header__button span {
+        @include productIcons();
+        width: 13px;
+        height: 8px;
+        margin-bottom: 0;
+        margin-left: 10px;
+        background-image: url(../assets/icons/down-arrow.svg);
+    }
+}
+
+.exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: $off-white;
+
+    &__title {
+        width: 90%;
+        min-width: 288px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    &__backgroundImg {
+        width: 300px;
+        height: 200px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        background: url('../assets/img/main__exchange--logo.png') no-repeat center / cover;
+    }
+    & h2 {
+        margin-bottom: 30px;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        color: $black;
+    }
+    & p {
+        margin-bottom: 60px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2rem;
+        color: $warm-black;
+    }
+    .main-exercises-container-title {
+        text-align: center;
+        margin: 15px;
+        font-size: 1.8rem;
+        color: $bitcoin-orange;
+    }
+    .exchange__exercises {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        max-width: 100%;
+        overflow-y: hidden;
+        scroll-snap-align: center;
+        scroll-snap-type: x proximity;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+
+        & a {
+            text-decoration: none;
+        }
+        .exercises__routine {
+            display: inline-block;
+            width: 95vw;
+            justify-self: center;
+            max-width: 350px;
+            margin: 20px 0;
+            height: 310px;
+            border-radius: 20px;
+            background: url(../assets/img/superior_train.jpg) no-repeat center / cover;
+            transition: 0.25s;
+            transform-origin: center;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.25s;
+            }
+            &--second-routine {
+                background-image: url(../assets/img/lower_train.jpg);
+            }
+            & .exercises__details {
+              position: relative;
+              padding: 5px;
+              display: flex;
+              flex-direction: column;
+              margin: auto;
+              width: 100%;
+              height: 20%;
+              top: 220px;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              font-size: 2rem;
+              font-weight: 500;
+              line-height: 1.9rem;
+              color: $just-white;
+              background-color: rgba(7, 7, 7, 0.1);
+              border-radius: 0 0 35px 35px;
+              border-top: 2px solid $warm-black;  
+
+              & p {
+                  margin-top: 10px;
+                  color: $just-white;
+              }
+            }
+        }
+    }
+}
+
+.productDescription {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: $warm-black;
+    box-shadow: 0px -1px 5px 2px black;
+    // opacity: 0;
+    // transform: translateY(30px);
+    // transition: 0.5s all ease-in-out;
+
+    &__title {
+        width: 90%;
+        min-width: 288px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+
+        & h2 {
+            margin-bottom: 20px;
+            font-size: 2.4rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: $bitcoin-orange;
+        }
+        & p {
+         margin-bottom: 20px;
+         font-size: 1.4rem;
+         font-weight: 500;
+         line-height: 1.8rem;
+         color: $just-white;   
+        }
+    }
+    .productCards__productDetailCard {
+        width: 90%;
+        min-width: 288px;
+        max-width: 400px;
+        height: auto;
+        margin: 15px auto;
+        padding: 15px 15px;
+        background-color: $black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(246, 132, 0, 0.23);
+
+        & span {
+            @include productIcons();
+        }
+
+        & .clock {
+            background-image: url(../assets/icons/clock.svg);
+        }
+        & .eye {
+            background-image: url(../assets/icons/eye.svg);
+        }
+        & .dollar {
+            background-image: url(../assets/icons/dollar-sign.svg);
+        }
+        & .checkCircle {
+            background-image: url(../assets/icons/check-circle.svg);
+        }
+        & .productDetailCard__title {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            line-height: 1.8rem;
+            color: $just-white;
+        }
+        & .productDetailCard__body {
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.8rem;
+            color: $soft-orange;
+        }
+    } 
+}
+.bitcoinImg-container {
+    @include productIcons();
+    width: 100%;
+    min-width: 320px;
+    height: 46vh;
+    background-image: url(../assets/img/bigbaby.jpg);
+
+    & h2 {
+        padding-top: 40px;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        text-align: center;
+        color: $just-white;
+    }
+}
+.plans {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: $off-white;
+
+    &__title {
+        width: 90%;
+        min-width: 288px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 50px;
+
+        & h2 {
+            padding-top: 50px;
+            font-size: 2.4rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: $black;
+        }
+        & p {
+            padding-top: 30px;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.8rem;
+            color: #757575;
+        }
+    } 
+    &__slider {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        height: 316px;
+        padding: 0 10px;
+        min-height: 316px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+
+        .slider__card {
+            display: flex;
+            justify-content:center;
+            position: relative;
+            width: 70%;
+            min-width: 250px;
+            max-width: 300px;
+            height: 250px;
+            background-color: $just-white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(8,8,8,0.16);
+
+            .recommended {
+                position: absolute;
+                width: 120px;
+                height: 31px;
+                padding: 6px;
+                top: -15px;
+                left: calc(50% - 60px);
+                font-size: 1.2rem;
+                color: $just-white;
+                background-color: $bitcoin-orange;
+                border-radius: 8px;
+            }
+            .basic {
+                background-color: $secondary-blue;
+            }
+            .vip {
+                background-color: darkorchid;
+            }
+            .slider__card__info-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                .info-container__title {
+                    padding-top: 15px;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    line-height: 1.8rem;
+                    color: black;
+                }
+                .info-container__price {
+                    font-size: 5.2rem;
+                    font-weight: bold;
+                    line-height: 4.3rem;
+                    color: black;
+
+                    span {
+                        position: absolute;
+                        top: 60px;
+                        right: 70px;
+                        left: 0;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+                }
+                .info-container__saving {
+                    font-size: 1.2rem;
+                    color: #383737;
+                }
+                .info-container__ca {
+                    width: 150px;
+                    height: 48px;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    line-height: 1.8rem;
+                    color: $black;
+                    background-color: #faf8f7;
+                    border-radius: 4px;
+                    border: 2px solid $bitcoin-orange;
+                    cursor: pointer;
+
+                    span {
+                        @include productIcons();
+                        vertical-align: text-bottom;
+                        margin: -2px 0;
+                        background-image: url(../assets/icons/arrow-right-orange.svg);
+                    }
+                }
+            }
+        }
+    }
+}
+.footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background: black;
+    box-shadow: 0 -2px 5px #5857e2;
+
+    & section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+    &__left ul {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        list-style: none;
+        & li {
+            margin: 10px 0;
+            & a {
+                text-decoration: none;
+                color: $just-white;
+            }
+        }
+    }
+    &__right img{
+        width: 50px;
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        font-weight: bold;
+        color: $just-white;
+        opacity: 0.6;
+    }
+}

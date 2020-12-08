@@ -5,161 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href=“https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap” />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width:960px)">
 </head>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/tablet.css" media="(min-width: 930px)" />
 <body>
-    <header>
-    <img src="./assets/img/logo.svg" alt="logo">
-    <div class="header--title-container">
-        <h1>La próxima revolución en el intercambio de criptomonedas</h1>
-        <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-        <a href="#plans" class="header--button">Conoce Nuestros Planes<span></span> </a>
+    <header class="header">
+    <img class="header__img" src="./assets/img/ybw_logo.png" alt="logo">
+    <div class="header__title-container">
+        <h1>Lleva tu salud al otro nivel</h1>
+        <p>Entrenar es evolucionar</p>
+        <a href="#plans" class="header__button"><span></span> </a>
     </div>
     </header>
     <main>
-        <section class="main-exchange-container">
-          <div class="backgroundImg"></div>
-            <div class="main-exchange-container--title">
-                <h2>Visibilizamos todas las tasas de cambio.</h2>
-                <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo</p>
+        <section class="exchange-container">
+          <div class="exchange-container__backgroundImg"></div>
+            <div class="exchange-container__title">
+                <h2>Elige la mejor rutina para ti según tus objetivos</h2>
+                <p>La dificultad de las rutinas va a ir incrementando conforme vayas progresando</p>
             </div>
-            
-            <main class="main-tables-container-grid">
-                <section class="main-tables-container">
-                    <h3 class="main-tables-container-title">Monedas</h3>
-                        <div class="main-tables-container-coins">
-                            <ul>
-                                <li>Bitcoin</li>
-                                <li>Ethereum</li>
-                                <li>Ripple</li>
-                                <li>Stellar</li>
-                            </ul>
-                         
-                        </div> 
-                        <div class="main-tables-container-coins-value">
-                            <ul>
-                                <li>$ 1.96<span class="main-tables--arrow-trending-down"></span></li>
-                                <li>$ 0.07<span class="main-tables--arrow-trending-up"></span></li>
-                                <li>$ 2.15<span class="main-tables--arrow-trending-down"></span></li>
-                                <li>$ 4.96<span class="main-tables--arrow-trending-down"></span></li>
-                            </ul>
-              
+            <h3 class="main-exercises-container-title">Rutinas</h3>
+            <main class="exchange__exercises">
+                        <a href="superior_train.html">
+                            <span class="exercises__routine">
+                                <div class="exercises__details">
+                                    <h4 class="exercises__title">Tren superior</h4>
+                                    <p>Entrena con la mejor rutina para el tren superior</p>
+                                </div>
+                            </span>
+                        </a>
+                        <a href="./lower_train.html">
+                            <span class="exercises__routine exercises__routine--second-routine">
+                                <div class="exercises__details">
+                                    <h4 class="exercises__title">Tren Inferior</h4>
+                                    <p>Lleva tus piernas y glúteos al límite</p>
+                                </div>
+                            </span>
+                        </a>
+                        </div>        
                         </div>
-                        <h4 class="currency-table--date">Actualizado: </h4>
                 </section>
-                <!--- Section 2  --> 
-                <section class="main-tables-container">
-                    <h3 class="main-tables-container-title-commissions">Comisiones</h3>
-                        <div class="main-tables-container-coins">
-                            <ul>
-                                <li>Bitrade</li>
-                                <li>Bitpreco</li>
-                                <li>Novadax</li>
-                                <li>Coinext</li>
-                            </ul>
-                        
-                        </div> 
-                        <div class="main-tables-container-coins-value">
-                            <ul>
-                                <li>$ 12.96</li>
-                                <li>$ 13.07</li>
-                                <li>$ 13.15</li>
-                                <li>$ 14.96</li>
-                            </ul>
-                            
-                        </div>
-                        <h4 class="currency-table--date-commissions">Actualizado: </h4>
-                        <span href="#" class="right-arrow"></span>
-                        <span href="#" class="left-arrow"></span>
-                </section>
-            </section>
             </main>
-        <section class="main-product-detail">
-            <span class="product-detail--batata-logo"></span>
-            <div class="product-detail--title">
-                <h2>Creamos un producto sin comparación.</h2>
+        <section class="productDescription">
+            <div class="productDescription__title">
+                <h2>Puedes entrenar sin límites.</h2>
                 <p>Confiable y diseñado para su uso diario.</p>
             </div>
-            <section class="product-cards--container">
-                <article class="product-detail--card">
+            <section class="productCards">
+                <article class="productCards__productDetailCard">
                     <span class="clock"></span>
-                    <p class="product--card-title">Tiempo real</p>
-                    <p class="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                    <p class="productDetailCard__title">La constancia</p>
+                    <p class="productDetailCard__body">La constancia sustenta el trabajo, es la fuerza de voluntad y el esfuerzo continuo para llegar a la meta propuesta.</p>
                 </article>
-                <article class="product-detail--card">
+                <article class="productCards__productDetailCard">
                     <span class="eye"></span>
-                    <p class="product--card-title">No hay tasas escondidas</p>
-                    <p class="product--card-body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+                    <p class="productDetailCard__title">Mejorando las rutinas</p>
+                    <p class="productDetailCard__body">Estaremos adaptando las rutinas según tu progreso</p>
                 </article>
-                <article class="product-detail--card">
+                <article class="productCards__productDetailCard">
                     <span class="dollar"></span>
-                    <p class="product--card-title">Compara monedas</p>
-                    <p class="product--card-body">No más rumores, con Batabit sabrás el valor real de cada moneda en el mercado actual.</p>
+                    <p class="productDetailCard__title">Precio accesible</p>
+                    <p class="productDetailCard__body">Entrena en cualquier lugar, no más gimnasios costosos</p>
                 </article>
-                <article class="product-detail--card">
+                <article class="productCards__productDetailCard">
                     <span class="checkCircle"></span>
-                    <p class="product--card-title">información confiable</p>
-                    <p class="product--card-body">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+                    <p class="productDetailCard__title">Informacion basada en ciencia</p>
+                    <p class="productDetailCard__body">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido.</p>
                 </article>
             </section>
         </section>
-        <section class="bitcoin-img-container">
-            <h2>Conócelo hoy.</h2>
+        <section class="bitcoinImg-container">
+            <h2>Comienza hoy.</h2>
             <picture>
                 
             </picture>
         </section>
-        <section id="plans" class="main-plans-container">
-            <div class="plans--title">
+        <section class="plans" id="plans">
+            <div class="plans__title">
                 <h2>
                     Escoge el plan que mejor se ajuste a ti.
                 </h2>
                 <p>Cualquier plan te da acceso completo a nuestra plataforma</p>
             </div>
-                <section class="plans-container--slider"> 
-                    <article class="plans-container--basic-card">
-                        <p class="recommended-basic">Basico</p>
-                        <div class="plan-info-container">
-                            <h3 class="plan-card--title">Pago Mensual</h3>
-                            <p class="plan-card--price"><span>$</span> 19</p>
-                            <p class="plan-card--saving">* Accesibilidad limitada sin acceso a todos los beneficios.</p>
-                            <button class="plan-card--ca-2">Escoger este <span></span></button>
+                <section class="plans__slider"> 
+                    <article class="slider__card">
+                        <p class="recommended basic">Básico</p>
+                        <div class="slider__card__info-container">
+                            <h3 class="info-container__title">Pago Mensual</h3>
+                            <p class="info-container__price"><span>$</span> 10</p>
+                            <p class="info-container__saving">* Ahorras $129 comparado al gym.</p>
+                            <button class="info-container__ca">Escoger este <span></span></button>
                         </div>
                     </article>
-                    <article class="plans-container--recommended-card">
-                        <p class="recommended">Recomendado</p>
-                        <div class="plan-info-container">
-                            <h3 class="plan-card--title">Pago Anual</h3>
-                            <p class="plan-card--price"><span>$</span> 99</p>
-                            <p class="plan-card--saving">* Ahorras $129 comparado al plan mensual.</p>
-                            <button class="plan-card--ca">Escoger este <span></span></button>
+                    <article class="slider__card">
+                        <p class="recommended recommended">Recomendado</p>
+                        <div class="slider__card__info-container">
+                            <h3 class="info-container__title">Pago Mensual</h3>
+                            <p class="info-container__price"><span>$</span> 10</p>
+                            <p class="info-container__saving">* Ahorras $129 comparado al gym.</p>
+                            <button class="info-container__ca">Escoger este <span></span></button>
                         </div>
                     </article>
-                    <article class="plans-container--premium-card">
-                        <p class="recommended-premium">Expert+ VIP</p>
-                        <div class="plan-info-container">
-                            <h3 class="plan-card--title">Pago Anual</h3>
-                            <p class="plan-card--price-3"><span>$</span> 199</p>
-                            <p class="plan-card--saving">* Ahorras $28 comparado al plan mensual y con exclusividad</p>
-                            <button class="plan-card--ca-3">Escoger este <span></span></button>
+                    <article class="slider__card">
+                        <p class="recommended vip">VIP</p>
+                        <div class="slider__card__info-container">
+                            <h3 class="info-container__title">Pago Mensual</h3>
+                            <p class="info-container__price"><span>$</span> 10</p>
+                            <p class="info-container__saving">* Ahorras $129 comparado al gym.</p>
+                            <button class="info-container__ca">Escoger este <span></span></button>
                         </div>
                     </article>
                 </section>
             
         </section>
     </main>
-    <footer>
-    <section class="left">
+    <footer class="footer">
+    <section class="footer__left">
         <ul>
             <li><a href="#">Linkedin</a> </li>
             <li><a href="#">Crunchbase</a> </li>
             <li><a href="#">Hackernews</a> </li>
         </ul>
     </section>
-    <section class="right">
-        <img src="./assets/img/footer_logo.svg" alt="Logo de Batatabit 2020">
+    <section class="footer__right">
+        <img src="./assets/img/ybw-logo1.png" alt="Logo de Batatabit 2020">
+        <p>Yosef Blandin Workout</p>
+        <p>All Right's Reserved</p>
     </section>
     </footer>
+    <script src="./js/app.js"></script>
 </body>
 </html>
