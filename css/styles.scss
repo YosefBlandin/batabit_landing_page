@@ -94,13 +94,17 @@ html {
             transform: scale(1.1);
         }
     }
-    .header__button span {
+    .header__button--arrow {
         @include productIcons();
         width: 13px;
         height: 8px;
         margin-bottom: 0;
         margin-left: 10px;
         background-image: url(../assets/icons/down-arrow.svg);
+        transition:1s;
+        &--up {
+            background-image: url(../assets/icons/up-arrow.svg);
+        }
     }
 }
 

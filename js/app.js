@@ -1,11 +1,18 @@
-function scrollAppear(){
-    var scrolleffect = document.querySelector('.main-product-detail');
-    var intro = scrolleffect.getBoundingClientRect().top;
-    var screenPosition = window.innerHeight / 1.1;
+let buttonArrow = document.querySelector('.header__button--arrow')
+let button = document.querySelector('.header__button')
 
-    if(intro < screenPosition) {
-        scrolleffect.classList.add('intro')
-    }
+buttonUp = () => {
+    button.setAttribute('href', '#header')
+    buttonArrow.classList.add('header__button--arrow--up');
+} 
+buttonDown = () => {
+    button.setAttribute('href', '#plans')
+    buttonArrow.classList.remove('header__button--arrow--up')
 }
 
-window.addEventListener('scroll', scrollAppear);
+
+window.addEventListener('scroll', () => {
+    let positionYscreen = document.querySelector('body');
+    let positionYscreenGet = positionYscreen.getBoundingClientRect().top;
+    positionYscreenGet < -1 ? buttonUp() : buttonDown();
+})

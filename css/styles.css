@@ -100,7 +100,7 @@ html {
           transform: scale(1.1);
 }
 
-.header .header__button span {
+.header .header__button--arrow {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -113,6 +113,12 @@ html {
   margin-bottom: 0;
   margin-left: 10px;
   background-image: url(../assets/icons/down-arrow.svg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header .header__button--arrow--up {
+  background-image: url(../assets/icons/up-arrow.svg);
 }
 
 .exchange-container {
